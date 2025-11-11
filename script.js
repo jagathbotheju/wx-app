@@ -2,6 +2,7 @@ const city = "kurunegala";
 const apiKey = "99575a0e1d272a935419ec995e6990bd";
 
 async function getWeather(city) {
+  if (!city) return;
   const url = `https://api.openweathermap.org/data/2.5/weather?units=metric&q=${city}&appid=${apiKey}`;
   try {
     const response = await fetch(url);
