@@ -20,17 +20,17 @@ async function getWeather(city) {
       //set weather icon
       const iconText = data.weather[0].main;
       if (iconText === "Clouds") {
-        weatherIcon.src = "images/clouds.png";
+        weatherIcon.src = "./images/clouds.png";
       } else if (iconText === "Clear") {
-        weatherIcon.src = "images/clear.png";
+        weatherIcon.src = "./images/clear.png";
       } else if (iconText === "Rain") {
-        weatherIcon.src = "images/rain.png";
+        weatherIcon.src = "./images/rain.png";
       } else if (iconText === "Drizzle") {
-        weatherIcon.src = "images/drizzle.png";
+        weatherIcon.src = "./images/drizzle.png";
       } else if (iconText === "Mist") {
-        weatherIcon.src = "images/mist.png";
+        weatherIcon.src = "./images/mist.png";
       } else if (iconText === "Snow") {
-        weatherIcon.src = "images/snow.png";
+        weatherIcon.src = "./images/snow.png";
       }
 
       document.getElementById("weather-details").style.display = "flex";
