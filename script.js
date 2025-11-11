@@ -9,8 +9,9 @@ async function getWeather(city) {
     const weatherIcon = document.getElementById("weather-icon");
 
     const data = await response.json();
+    console.log(data);
     if (data.cod == 200) {
-      document.getElementById("city").innerText = `${city}`;
+      document.getElementById("city").innerText = `${data.name}`;
       document.getElementById("temp").innerText = `${Math.trunc(
         data.main.temp
       )}°C`;
